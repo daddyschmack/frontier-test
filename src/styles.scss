@@ -59,10 +59,7 @@ footer {
   grid-row-start: 3;
 }
 .account-column {
-  grid-template-rows: 2em repeat(2, 10em);
-  &:hover{
-
-  }
+  grid-template-rows: 2em repeat(auto-fit, minmax(175px, 200px));;
 }
 .content-title-container {
   justify-self: center;
@@ -76,7 +73,6 @@ footer {
   color:#808080;
 }
 #inactive-account-column, #overdue-account-column, #active-account-column{
-  background-color: rgba(119,136,153, .02);
   height: auto;
   overflow-y: auto;
 
@@ -84,7 +80,7 @@ footer {
 
 .account-container {
   justify-self: center;
-  height: 5em;
+  height: fit-content;
   margin-top: 1rem;
 }
 
